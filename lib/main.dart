@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/settings.dart';
 import 'screens/welcome.dart';
 
 void main() {
@@ -11,7 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'RummyUI',
-      home: Welcome(),
+      initialRoute: "/",
+      routes: {
+        "/":(context)=>Welcome(),
+        "settings":(context)=> Settings()
+      },
     );
   }
 }

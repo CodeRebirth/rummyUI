@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:rummyuiapp/widgets/clipper.dart';
+import 'package:rummyuiapp/widgets/button.dart';
 
 class Welcome extends StatelessWidget {
   @override
@@ -12,25 +12,37 @@ class Welcome extends StatelessWidget {
           fit: BoxFit.cover,
           image:AssetImage("assets/images/rummy1.png")
         )),
-        child:Stack(children: [
+        child:Stack(
+          children: [
           Positioned(
-            bottom: 100,
-            left: MediaQuery.of(context).size.width/2-100,
+            bottom: 190,
+            left:100,
+            right:100,
               child: Align(
               alignment: Alignment.bottomCenter,
-              child:ElevatedButton(
-                style: ButtonStyle(
-                  elevation:MaterialStateProperty.all(40),
-                  minimumSize: MaterialStateProperty.all(Size(200,100)),
-                  backgroundColor: MaterialStateProperty.all(Colors.green)
-                ),
-                child:Text("START",style:TextStyle(fontSize: 30)),
-                onPressed:(){ 
-                  
-              })
+              child:Button("Start",)
+            ),
+          ),
+          Positioned(
+            bottom: 80,
+            left:100,
+            right:100,
+              child: Align(
+              alignment: Alignment.bottomCenter,
+              child:Button("Settings",)
+            ),
+          ),
+          Positioned(
+            bottom: 20,
+            right: 20,
+              child: CircleAvatar(
+              minRadius: 25,
+              backgroundColor: Colors.amber,
+              child: Icon(Icons.help_outline,size: 30,color: Colors.black),
             ),
           )
         ],)
       ));
   }
 }
+
