@@ -16,9 +16,9 @@ class Settings extends StatelessWidget {
          child:Stack(
            children: [
            Positioned(
-             top:110,
+             top:120,
              left:20,
-             child: Text("Player - Rummy king Rahul",style: TextStyle(color:Colors.white,fontSize:16,fontWeight: FontWeight.bold,fontFamily: "PressStart"),)),
+             child: Text("Player - Rummy King",style: TextStyle(color:Colors.white,fontSize:16,fontWeight: FontWeight.bold,fontFamily: "PressStart"),)),
            Positioned(
              top:160,
              left:20,
@@ -26,7 +26,7 @@ class Settings extends StatelessWidget {
             Positioned(
              top:190,
              left:20,
-             child: Text("Account Balance: 100000",style: TextStyle(color:Colors.white,fontSize: 15,fontWeight: FontWeight.bold,fontFamily: "PressStart"),)),
+             child: Text("Balance: 100000",style: TextStyle(color:Colors.white,fontSize: 15,fontWeight: FontWeight.bold,fontFamily: "PressStart"),)),
             Positioned(
              top:230,
              left:20,
@@ -41,6 +41,7 @@ class Settings extends StatelessWidget {
                left: 100,
                right: 100,
                  child: Container(
+                 width:10000,
                  color: Colors.black.withOpacity(0.5),
                  padding: EdgeInsets.all(10),
                  height: MediaQuery.of(context).size.height * 0.6,
@@ -51,7 +52,7 @@ class Settings extends StatelessWidget {
                      SizedBox(height: 50,),
                      Text("GFX:-  OFF",style: TextStyle(color:Colors.green,fontSize: 20,fontWeight: FontWeight.bold,fontFamily: "PressStart")),
                      SizedBox(height: 50,),
-                     Text("SOUND:- ON",style: TextStyle(color:Colors.green,fontSize: 20,fontWeight: FontWeight.bold,fontFamily: "PressStart")),
+                     Text("HELP",style: TextStyle(color:Colors.green,fontSize: 20,fontWeight: FontWeight.bold,fontFamily: "PressStart")),
                      SizedBox(height: 50,),
                      Text("LOGOUT",style: TextStyle(color:Colors.green,fontSize: 20,fontWeight: FontWeight.bold,fontFamily: "PressStart")),
                      SizedBox(height: 50,),
